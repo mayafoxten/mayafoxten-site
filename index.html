@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maya Foxten — The 3 Healing Truths Dogs Live By</title>
+<meta name="description" content="Discover the 3 healing truths dogs know instinctively—so you can stop surviving and start returning to yourself.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F6F1E9;--cream-deep:#EDE5D6;--warm:#FAF7F3;
+  --bark:#2E1F14;--bark-mid:#5C3D28;--bark-light:#8C6448;
+  --moss:#3B4A35;--moss-mid:#5A6B52;--moss-light:#8A9B80;
+  --gold:#A8852A;--gold-light:#C9A84C;--gold-pale:#E8D49A;
+  --fox:#B5501E;--fox-light:#D4784A;
+  --sw:rgba(46,31,20,.10);--sd:rgba(46,31,20,.20);
+  --b:rgba(46,31,20,.10);--bm:rgba(46,31,20,.18);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;font-weight:300;background:var(--warm);color:var(--bark);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.028;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");background-size:250px}
+.eyebrow{font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:20px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400;line-height:1.08}
+p{line-height:1.8;font-weight:300}
+.btn{display:inline-block;cursor:pointer;border:none;font-family:'Jost',sans-serif;font-weight:500;font-size:12px;letter-spacing:.15em;text-transform:uppercase;padding:17px 40px;border-radius:1px;transition:all .22s ease;text-decoration:none}
+.btn-moss{background:var(--moss);color:var(--warm)}
+.btn-moss:hover{background:var(--bark);transform:translateY(-1px);box-shadow:0 8px 28px var(--sd)}
+.btn-light{background:var(--warm);color:var(--moss)}
+.btn-light:hover{background:var(--cream);box-shadow:0 12px 36px rgba(0,0,0,.22)}
+.btn-full{width:100%;text-align:center;display:block}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .75s ease,transform .75s ease}
+.reveal.up{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── HERO ── */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 460px;position:relative;overflow:hidden}
+.hl{background:var(--moss);padding:80px 60px 80px 80px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hl::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 50% at 20% 90%,rgba(168,133,42,.18) 0%,transparent 70%),radial-gradient(ellipse 50% 60% at 85% 10%,rgba(59,74,53,.6) 0%,transparent 60%)}
+.hl::after{content:'';position:absolute;right:-46px;top:0;bottom:0;width:92px;background:var(--moss);clip-path:polygon(0 0,0 100%,100% 100%);z-index:2}
+.h-eye{font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-light);margin-bottom:32px;opacity:0;animation:fadeUp .8s ease .1s forwards;position:relative;z-index:1}
+.h1{font-size:clamp(40px,5.2vw,68px);font-weight:300;line-height:1.06;color:var(--warm);margin-bottom:28px;opacity:0;animation:fadeUp .85s ease .25s forwards;position:relative;z-index:1}
+.h1 em{font-style:italic;color:var(--gold-light)}
+.h-sub{font-size:17px;font-weight:300;line-height:1.65;color:rgba(250,247,243,.72);max-width:440px;margin-bottom:36px;opacity:0;animation:fadeUp .85s ease .4s forwards;position:relative;z-index:1}
+.h-bul{list-style:none;opacity:0;animation:fadeUp .85s ease .52s forwards;position:relative;z-index:1}
+.h-bul li{display:flex;align-items:flex-start;gap:14px;font-size:14px;font-weight:300;color:rgba(250,247,243,.62);padding:7px 0;line-height:1.55}
+.h-bul li::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold-light);flex-shrink:0;margin-top:7px}
+.hr{background:var(--cream);display:flex;align-items:center;justify-content:center;padding:80px 56px 80px 76px;position:relative;z-index:1}
+.fc{width:100%;opacity:0;animation:fadeUp .9s ease .6s forwards}
+.fc-eye{font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--fox);margin-bottom:16px;display:block}
+.fc h2{font-size:32px;font-weight:400;line-height:1.15;color:var(--bark);margin-bottom:10px}
+.fc h2 em{font-style:italic;color:var(--fox)}
+.fc-desc{font-size:14px;color:var(--bark-light);margin-bottom:28px;line-height:1.65}
+.field{margin-bottom:12px}
+.field input{width:100%;padding:15px 18px;border:.5px solid var(--bm);border-radius:1px;background:var(--warm);font-family:'Jost',sans-serif;font-size:14px;font-weight:300;color:var(--bark);outline:none;transition:border-color .2s,box-shadow .2s}
+.field input::placeholder{color:rgba(46,31,20,.38)}
+.field input:focus{border-color:var(--moss-mid);box-shadow:0 0 0 3px rgba(90,107,82,.08)}
+.micro{font-size:11.5px;font-weight:300;color:var(--bark-light);text-align:center;margin-top:14px;line-height:1.55;opacity:.7}
+.success-state{display:none;text-align:center;padding:20px 0}
+.success-state h3{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;color:var(--moss);margin-bottom:12px}
+.success-state p{font-size:14px;color:var(--bark-light);line-height:1.65}
+.sp{font-size:36px;margin-bottom:16px;display:block}
+
+/* ── INSIDE ── */
+.inside{padding:110px 80px;background:var(--warm);display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
+.ins-t{font-size:clamp(34px,3.6vw,50px);color:var(--bark);margin-bottom:26px;line-height:1.1}
+.ins-t em{font-style:italic;color:var(--moss)}
+.ins-b{font-size:15px;color:var(--bark-light);line-height:1.85}
+.icard{background:var(--cream-deep);border-radius:2px;padding:42px 38px;border:.5px solid var(--b);position:relative}
+.icard::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--moss),var(--gold))}
+.feat-list{list-style:none}
+.feat-list li{display:flex;align-items:flex-start;gap:16px;padding:14px 0;border-bottom:.5px solid var(--b);font-size:14px;color:var(--bark-mid);line-height:1.6}
+.feat-list li:last-child{border-bottom:none}
+.fi{width:28px;height:28px;border-radius:50%;background:var(--moss);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;font-size:13px}
+.inote{margin-top:28px;padding:18px 20px;background:var(--warm);border-radius:1px;font-family:'Cormorant Garamond',serif;font-size:16.5px;font-style:italic;color:var(--bark-mid);line-height:1.55;border-left:2px solid var(--gold)}
+
+/* ── TRUTHS ── */
+.truths{padding:110px 80px;background:var(--cream)}
+.th{text-align:center;margin-bottom:68px}
+.th h2{font-size:clamp(36px,4vw,54px);color:var(--bark)}
+.th h2 em{font-style:italic;color:var(--fox)}
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tc{background:var(--warm);border:.5px solid var(--b);border-radius:2px;padding:42px 34px;position:relative;overflow:hidden;transition:box-shadow .3s}
+.tc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;opacity:0;transition:opacity .3s}
+.tc:nth-child(1)::after{background:linear-gradient(90deg,var(--moss),var(--moss-light))}
+.tc:nth-child(2)::after{background:linear-gradient(90deg,var(--gold),var(--gold-light))}
+.tc:nth-child(3)::after{background:linear-gradient(90deg,var(--fox),var(--fox-light))}
+.tc:hover::after{opacity:1}
+.tc:hover{box-shadow:0 16px 48px var(--sw)}
+.tn{font-family:'Cormorant Garamond',serif;font-size:60px;font-weight:300;line-height:1;margin-bottom:16px;display:block}
+.tc:nth-child(1) .tn{color:var(--moss-light)}
+.tc:nth-child(2) .tn{color:var(--gold-light)}
+.tc:nth-child(3) .tn{color:var(--fox-light)}
+.tc h3{font-size:25px;color:var(--bark);margin-bottom:12px;line-height:1.15}
+.tc h3 em{font-style:italic}
+.ttag{font-family:'Cormorant Garamond',serif;font-size:15px;font-style:italic;color:var(--bark-mid);margin-bottom:18px;display:block;line-height:1.5}
+.tc p{font-size:13.5px;color:var(--bark-light);line-height:1.75}
+
+/* ── WHY ── */
+.why{padding:110px 80px;background:var(--bark);position:relative;overflow:hidden}
+.why::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 55% 55% at 5% 50%,rgba(168,133,42,.1) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 95% 20%,rgba(59,74,53,.5) 0%,transparent 55%)}
+.wi{max-width:840px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.why .eyebrow{color:var(--gold-light)}
+.why h2{font-size:clamp(36px,4.5vw,56px);color:var(--warm);margin-bottom:38px}
+.why h2 em{font-style:italic;color:var(--gold-light)}
+.why-body{font-size:16px;color:rgba(250,247,243,.65);line-height:1.9;max-width:620px;margin:0 auto 56px}
+.why-body strong{color:rgba(250,247,243,.88);font-weight:400;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px}
+.pillars{display:flex;justify-content:center;gap:48px;flex-wrap:wrap}
+.pill{display:flex;flex-direction:column;align-items:center;gap:10px}
+.pd{width:44px;height:44px;border-radius:50%;border:.5px solid rgba(250,247,243,.2);display:flex;align-items:center;justify-content:center;font-size:18px}
+.pl{font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(250,247,243,.38)}
+
+/* ── BOOK ── */
+.book{padding:110px 80px;background:var(--cream-deep)}
+.bi{max-width:1040px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:80px;align-items:center}
+.book-obj{position:relative;width:186px;height:258px;flex-shrink:0;transform:perspective(700px) rotateY(-12deg);transition:transform .4s ease}
+.book-obj:hover{transform:perspective(700px) rotateY(-4deg)}
+.book-face{position:absolute;inset:0;background:var(--moss);border-radius:1px 4px 4px 1px;box-shadow:-5px 4px 0 rgba(0,0,0,.25),10px 18px 44px rgba(0,0,0,.35);display:flex;flex-direction:column;justify-content:space-between;padding:26px 20px 20px;overflow:hidden}
+.book-face::before{content:'';position:absolute;left:0;top:0;bottom:0;width:18px;background:rgba(0,0,0,.18)}
+.book-face::after{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 60% at 80% 20%,rgba(168,133,42,.18) 0%,transparent 60%)}
+.bt{font-size:8.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-pale);font-family:'Jost',sans-serif;font-weight:500;position:relative;z-index:1}
+.bm{position:relative;z-index:1}
+.btitle{font-family:'Cormorant Garamond',serif;font-size:23px;font-weight:400;line-height:1.15;color:var(--warm)}
+.btitle em{font-style:italic;color:var(--gold-light)}
+.bsub{font-size:9px;letter-spacing:.1em;color:rgba(250,247,243,.42);font-family:'Jost',sans-serif;font-weight:300;margin-top:8px;line-height:1.4;text-transform:uppercase}
+.bauth{font-size:9px;letter-spacing:.14em;color:rgba(250,247,243,.38);font-family:'Jost',sans-serif;position:relative;z-index:1;text-transform:uppercase}
+.bpaw{position:absolute;bottom:16px;right:12px;font-size:50px;opacity:.07;z-index:0}
+.bc .eyebrow{color:var(--gold)}
+.bc h2{font-size:clamp(32px,3.5vw,46px);color:var(--bark);margin-bottom:16px}
+.bc h2 em{font-style:italic;color:var(--moss)}
+.bc > p{font-size:15px;color:var(--bark-light);margin-bottom:32px;line-height:1.8}
+.chs{list-style:none;margin-bottom:34px}
+.chs li{display:flex;align-items:flex-start;gap:14px;padding:11px 0;border-bottom:.5px solid var(--b);font-size:13.5px;color:var(--bark-mid);line-height:1.55}
+.chs li:last-child{border-bottom:none}
+.cn{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--gold);min-width:20px;line-height:1;margin-top:-2px}
+.crow{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.cnote{font-size:13px;font-weight:300;color:var(--bark-light)}
+
+/* ── FINAL CTA ── */
+.fcta{padding:120px 80px;background:var(--moss);text-align:center;position:relative;overflow:hidden}
+.fcta::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 60% at 50% 100%,rgba(46,31,20,.35) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 50% 0%,rgba(59,74,53,.8) 0%,transparent 55%)}
+.fcta-in{position:relative;z-index:1;max-width:580px;margin:0 auto}
+.fcta .eyebrow{color:var(--gold-light)}
+.fcta h2{font-size:clamp(42px,5vw,66px);color:var(--warm);margin-bottom:24px}
+.fcta h2 em{font-style:italic;color:var(--gold-light)}
+.fcta p{font-size:16px;color:rgba(250,247,243,.68);margin-bottom:44px;line-height:1.8}
+
+/* ── FOOTER ── */
+footer{padding:34px 80px;background:var(--bark);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;border-top:.5px solid rgba(250,247,243,.07)}
+.fc2{font-size:12px;font-weight:300;color:rgba(250,247,243,.28)}
+.flinks{display:flex;gap:28px}
+.flinks a{font-size:12px;font-weight:300;color:rgba(250,247,243,.28);text-decoration:none;transition:color .2s}
+.flinks a:hover{color:rgba(250,247,243,.65)}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr}
+  .hl{padding:80px 32px 60px;min-height:60svh}
+  .hl::after{display:none}
+  .hr{padding:52px 32px 80px}
+  .inside{grid-template-columns:1fr;gap:52px;padding:80px 32px}
+  .tgrid{grid-template-columns:1fr;gap:18px}
+  .bi{grid-template-columns:1fr;gap:44px}
+  .book-obj{margin:0 auto;transform:none}
+  .truths,.why,.book,.fcta{padding:80px 28px}
+  footer{padding:28px 28px;flex-direction:column;text-align:center}
+}
+@media(max-width:600px){
+  .inside{padding:64px 22px}
+  .hl{padding:64px 22px 52px}
+  .hr{padding:44px 22px 64px}
+  .pillars{gap:28px}
+}
+</style>
+</head>
+<body>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hl">
+    <span class="h-eye">Maya Foxten &nbsp;·&nbsp; Emotional Healing &nbsp;·&nbsp; Nature Wisdom</span>
+    <h1 class="h1">The 3 Healing Truths<br>Dogs Live By<br><em>(That Humans Forget)</em></h1>
+    <p class="h-sub">Discover the 3 healing truths dogs know instinctively — so you can stop surviving and start returning to yourself.</p>
+    <ul class="h-bul">
+      <li>Dogs know how to rest without guilt.</li>
+      <li>How to trust without overthinking.</li>
+      <li>How to return to themselves after pain.</li>
+    </ul>
+  </div>
+  <div class="hr">
+    <div class="fc">
+      <span class="fc-eye">Free Guide &nbsp;↓</span>
+      <h2>Get the <em>free guide</em></h2>
+      <p class="fc-desc">A short, powerful guide to help you reconnect with yourself through the emotional wisdom dogs live by naturally.<br><br>Delivered instantly to your inbox.</p>
+      <div id="form-state">
+        <!-- Posts to Netlify Function — see netlify/functions/subscribe.js -->
+        <form id="sub-form" novalidate>
+          <div class="field"><input type="text" id="fn" name="firstName" placeholder="First name" autocomplete="given-name" required></div>
+          <div class="field"><input type="email" id="fe" name="email" placeholder="Email address" autocomplete="email" required></div>
+          <button type="submit" class="btn btn-moss btn-full" id="sbtn">Give me the 3 truths</button>
+        </form>
+        <p class="micro">No noise. No pressure.<br>Just something gentle to return to when life feels heavy.</p>
+      </div>
+      <div class="success-state" id="suc">
+        <span class="sp">🐾</span>
+        <h3>It's on its way</h3>
+        <p>Your guide is in your inbox.<br>Welcome to the pack, lovely one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── INSIDE THE GUIDE ── -->
+<section class="inside">
+  <div class="reveal">
+    <span class="eyebrow">Inside the guide</span>
+    <h2 class="ins-t">Three truths your body has been trying to <em>remember</em></h2>
+    <p class="ins-b">These are not productivity lessons.<br>They are healing truths.<br><br>Simple. Practical. Honest.</p>
+  </div>
+  <div class="icard reveal d2">
+    <ul class="feat-list">
+      <li><span class="fi">🌿</span>Why rest is regulation — not reward</li>
+      <li><span class="fi">🤍</span>How self-loyalty changes your relationships</li>
+      <li><span class="fi">🦊</span>Why instinct is a form of intelligence</li>
+      <li><span class="fi">🐾</span>How dogs naturally regulate stress and emotion</li>
+      <li><span class="fi">🌱</span>A grounding ritual to return to yourself</li>
+    </ul>
+    <div class="inote">"Sometimes healing is less about learning something new — and more about remembering what was always true."</div>
+  </div>
+</section>
+
+<!-- ── THREE TRUTHS ── -->
+<section class="truths">
+  <div class="th reveal">
+    <span class="eyebrow">The three truths</span>
+    <h2>What dogs remember<br><em>that humans forget</em></h2>
+  </div>
+  <div class="tgrid">
+    <div class="tc reveal">
+      <span class="tn">01</span>
+      <h3>Rest is <em>regulation</em></h3>
+      <span class="ttag">Your body was built for repair, not endless performance.</span>
+      <p>Dogs rest when they need to. Without guilt. Without explanation.<br><br>This chapter helps you understand why rest is part of healing — not something you earn.</p>
+    </div>
+    <div class="tc reveal d1">
+      <span class="tn">02</span>
+      <h3>Loyalty starts <em>within</em></h3>
+      <span class="ttag">Self-abandonment often looks like love.</span>
+      <p>Dogs know loyalty, but not at the cost of their own instincts.<br><br>This chapter helps you recognise where you've been over-giving, over-carrying, or disappearing in relationships.</p>
+    </div>
+    <div class="tc reveal d2">
+      <span class="tn">03</span>
+      <h3>Instinct is <em>intelligence</em></h3>
+      <span class="ttag">Your body often knows the truth before your mind can explain it.</span>
+      <p>Dogs trust what they sense.<br><br>This chapter helps you reconnect with the intelligence already living inside you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY DOGS ── -->
+<section class="why">
+  <div class="wi">
+    <span class="eyebrow reveal">Why dogs?</span>
+    <h2 class="reveal d1">Why Maya teaches<br><em>through dogs</em></h2>
+    <p class="why-body reveal d2">
+      Dogs live in emotional truth.<br><br>
+      They don't earn rest.<br>They don't perform belonging.<br>They don't abandon instinct to be accepted.<br><br>
+      <strong>Maya Foxten blends emotional healing, nervous system wisdom, and the quiet intelligence of nature to help women come home to themselves.</strong><br><br>
+      Because sometimes healing is less about learning something new —<br>and more about remembering what was always true.
+    </p>
+    <div class="pillars reveal d3">
+      <div class="pill"><span class="pd">🌿</span><span class="pl">Nature wisdom</span></div>
+      <div class="pill"><span class="pd">🧠</span><span class="pl">Nervous system</span></div>
+      <div class="pill"><span class="pd">🐾</span><span class="pl">Dog intelligence</span></div>
+      <div class="pill"><span class="pd">🤍</span><span class="pl">Emotional healing</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BOOK TEASER ── -->
+<section class="book">
+  <div class="bi">
+    <div class="book-obj reveal">
+      <div class="book-face">
+        <span class="bt">Maya Foxten</span>
+        <div class="bm">
+          <div class="btitle">The<br><em>Loyal</em><br>Heart</div>
+          <div class="bsub">7 Lessons From Dogs<br>on How to Heal Yourself</div>
+        </div>
+        <span class="bauth">Maya Foxten</span>
+        <span class="bpaw">🐾</span>
+      </div>
+    </div>
+    <div class="bc reveal d2">
+      <span class="eyebrow">When you're ready</span>
+      <h2>Go deeper with <em>The Loyal Heart</em></h2>
+      <p>The Loyal Heart expands these teachings into seven deeper lessons on grief, trust, boundaries, self-worth, emotional recovery, and coming home to yourself.<br><br>Start with the free guide. Continue when you're ready.</p>
+      <ul class="chs">
+        <li><span class="cn">1</span>The art of resting without apology</li>
+        <li><span class="cn">2</span>Chasing what is real, not what is familiar</li>
+        <li><span class="cn">3</span>How to grieve without getting lost in it</li>
+        <li><span class="cn">4</span>The pack you deserve vs the pack you settled for</li>
+        <li><span class="cn">5</span>Following your nose when the path disappears</li>
+        <li><span class="cn">6</span>What unconditional actually means</li>
+        <li><span class="cn">7</span>Coming home to yourself</li>
+      </ul>
+      <div class="crow">
+        <button class="btn btn-moss" onclick="scrollToForm()">Join the waitlist</button>
+        <span class="cnote">Coming soon &nbsp;·&nbsp; eBook &nbsp;·&nbsp; $14</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ── -->
+<section class="fcta">
+  <div class="fcta-in">
+    <span class="eyebrow reveal">Begin here</span>
+    <h2 class="reveal d1"><em>Begin</em> here</h2>
+    <p class="reveal d2">Healing doesn't always begin with answers.<br><br>Sometimes it begins with remembering what your body has been trying to tell you.<br><br>Start with the three truths.</p>
+    <button class="btn btn-light reveal d3" onclick="scrollToForm()">Give me the 3 truths</button>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <span class="fc2">© 2026 Maya Foxten. All rights reserved.</span>
+  <nav class="flinks">
+    <a href="/privacy">Privacy</a>
+    <a href="https://instagram.com/mayafoxten" target="_blank" rel="noopener">Instagram</a>
+    <a href="mailto:hello@mayafoxten.com">Contact</a>
+  </nav>
+</footer>
+
+<script>
+/* SCROLL REVEAL */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('up');obs.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+
+/* SCROLL TO FORM */
+function scrollToForm(){
+  document.querySelector('.hr').scrollIntoView({behavior:'smooth'});
+  setTimeout(()=>document.getElementById('fn').focus(),600);
+}
+
+/* FORM SUBMIT
+   Posts JSON to /.netlify/functions/subscribe
+   That Netlify Function calls Brevo API server-side (no key exposed here)
+   Function file: netlify/functions/subscribe.js — see README.md
+*/
+document.getElementById('sub-form').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const name=document.getElementById('fn').value.trim();
+  const email=document.getElementById('fe').value.trim();
+  const btn=document.getElementById('sbtn');
+  if(!name){highlight('fn');return;}
+  if(!email||!email.includes('@')){highlight('fe');return;}
+  btn.textContent='Sending…';btn.disabled=true;
+  try{
+    const res=await fetch('/.netlify/functions/subscribe',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({firstName:name,email:email})
+    });
+    if(res.ok){showSuccess();}
+    else{throw new Error(await res.text());}
+  }catch(err){
+    btn.textContent='Give me the 3 truths';btn.disabled=false;
+    console.error('Subscribe error:',err);
+    alert('Something went wrong. Please try again.');
+  }
+});
+function showSuccess(){
+  document.getElementById('form-state').style.display='none';
+  document.getElementById('suc').style.display='block';
+}
+function highlight(id){
+  const el=document.getElementById(id);
+  el.style.borderColor='#B5501E';el.focus();
+  setTimeout(()=>el.style.borderColor='',2000);
+}
+</script>
+</body>
+</html>
